@@ -15,7 +15,7 @@ function App() {
 
   const handleCart = (element) => {
     // console.log(element);
-    const isExist = cart.find((fe) => fe.id === element.id);
+    const isExist = cart.find((existElement) => existElement.id === element.id);
     console.log(isExist);
     if (!isExist) {
       setCart([...cart, element]);
